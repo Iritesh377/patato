@@ -1,0 +1,532 @@
+@import 'utilities.css';
+:root{ 
+    --primary: #FEE715FF;
+    --dark: #101820FF;
+    --pure: white;
+    --lightdark: #7e7e7e;
+    --secondary: #070606;
+    --light:#f0f0f0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+    scroll-behavior: smooth;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%,70% 90%, 0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        max-width: 950px;
+    }
+}
+@media(min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition:all .6s ease;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .logo{
+    margin-right: 3rem;
+}
+
+.hero {
+    padding: 3rem 0;
+    }
+    
+
+.hero .left img{
+width: 360px;
+}
+
+.hero .right {
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color:var(--primary);
+}
+
+.hero .right p{
+line-height: 1.9;
+margin-bottom: 2rem;
+}
+.btn-secondary{
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-secondary:hover{
+    background: var(--primary);
+    color: var(--dark);
+}
+
+.hero .right {
+    margin-top: -9 rem;
+    }  
+
+ section{
+     padding: 6rem 0;
+ }   
+
+ */*ABOUT*/
+
+section.about .about-me-img{
+    border-radius: 50%;
+    size: 350px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+color: var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about{
+    font-family: 'Lato', sans-serif;
+    color: var(--lightdark);
+    line-height: 1.9;
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading + p{
+    color: var(--lightdark);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+
+}
+.section-heading span{
+    color: var(--primary);
+}
+
+*/*PROJECTS*/
+
+
+section.projects{
+    background-color: var(--light);
+}
+section.projects .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+
+}
+section.projects .card-wrapper .card{
+    background-color: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all .6s ease;
+}
+section.projects .card-wrapper .card img{
+    position: absolute;
+    border-radius: 50%;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 110px;
+}
+section.projects .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.projects .card-wrapper .card p{
+font-family: 'lato', sans-serif;
+color: var(--lightdark);
+line-height: 1.6;
+}
+section.projects .card-wrapper .card:hover{
+    background-color: var(--secondary);
+}
+section.projects .card-wrapper .card:hover h2, section.projects .card-wrapper .card:hover p{
+    color: var(--light);
+}
+section.projects .card-wrapper .card:hover button{
+    color: white;
+}
+section.projects .card-wrapper .card button:hover{
+    color: BLACK;
+}
+section.projects .card-wrapper .card button{
+    margin-top: 1rem;
+    color: black;
+    transition: all .3s ease;
+    
+
+}
+*/*SKILLS*/
+
+section.skills{
+    padding-bottom: 10rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,70% 90%, 0 100%);
+}
+
+section.skills .wrapper{
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+margin:0 auto;
+
+}
+section.skills .skill {
+    margin-bottom: 35px;
+    position: relative;
+  overflow-x:hidden;
+ 
+  
+}
+section.skills .skill > p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1716;
+    margin: 0;
+    
+}
+section.skills .skill:before{
+    width: 100%;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: var(--lightdark);
+    bottom: 0;
+    
+}
+.skill-bar {
+    width: 100%;
+    height: 5px;
+    background: var(--primary);
+    display: block;
+    position: relative;
+}
+
+/* SKILL 1 */
+.skill1{
+    width: 95%;
+  
+}
+.skill-bar span{
+    position: absolute;
+    border-top: 5px solid var(--primary);
+    top: -30px;
+    padding: 0;
+    font-size: 18px;
+    padding: 3px 0;
+    font-weight: 500;
+}
+.skill-bar {
+    position: relative;
+  
+}
+
+.skill1 .skill-count1 {
+    right: 0;
+}
+/* SKILL 2 */
+.skill2{
+    width: 75%;
+}
+
+.skill2 .skill-count2 {
+    right: 0;
+}
+/* SKILL 3 */
+.skill3{
+    width: 85%;
+}
+.skill3 .skill-count3 {
+    right: 0;
+}
+
+/* SKILL 4 */
+.skill4{
+    width: 65%
+}
+
+.skill4 .skill-count4 {
+    right: 0;
+}
+
+/* SKILL 5 */
+.skill5{
+    width: 70%;
+}
+
+.skill5 .skill-count5 {
+    right: 0;
+}
+
+/* SKILL 6 */
+.skill6{
+    width: 90%
+}
+
+.skill6 .skill-count6 {
+    right: 0;
+}
+/* GITHUB SOURCE STYLE  */
+.github-source{
+float:right;
+display:block;
+color:#fff;
+margin:0 20px;
+position: relative;
+z-index:999999;
+top:0;
+}
+.github-source i{
+font-size:50px;
+color:#000;
+}
+
+/*SOCIAL*/
+section.social{
+    background-color: var(--light);
+    display: flex;
+    
+}
+
+section.social .container img{
+    width: 5rem;
+    border-radius: 50%;
+    margin-left: 10px;
+    padding: 1px;
+       
+}
+section.social .container img:hover{
+background-color: var(--primary);
+transition: all .6s ease;
+
+}
+
+
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: .5s ease-in-out;
+}
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+.hamberger img{
+    width: 0.1px;
+}
+
+.MovetoTop{
+background-color: var(--dark);
+  border: none;
+  border-radius: 20%;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  opacity: 0;
+}
+.MovetoTop:hover{
+    background-color: var(--primary);
+    color: var(--dark);
+    transition: 0.5s ease;
+    border-radius: 50%;
+    border-color: var(--dark);
+    border-radius: 0.3rem;
+    border-style: none;
+    }
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+      }    
+@media (max-width: 1024px){
+    .hamberger img{
+        width: 20px;
+    }
+    
+    header #main-nav{
+        display: none;
+    }
+    .hero .left img{
+        width: 260px;
+    }   
+    .hero .right h1 {
+        font-size: 3rem;
+    }
+    .hero{
+        padding-top: 8rem;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,21% 91%, 0 100%);
+    }
+    section.about .about-me-img{
+        height: 200px;
+    }
+    section.projects .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.skills .wrapper{
+        width: 330px;
+    }
+    section.social .container img{
+        width: 3rem;
+    }
+}
+@media (max-width: 576px){
+    .hamberger img{
+        width: 20px;
+    }
+
+    .hero .left img{
+        width: 230;
+    }
+
+    .hero .right h1 {
+        font-size: 1rem;
+    }
+    .hero{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 800%,100% 90%, 0 100%);
+    }
+    section.about .about-me-img{
+        width: 170px;
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+    }
+    section.projects .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.skills .wrapper{
+        width: 290px;
+    }
+    section.social .container img{
+        width: 2rem;
+    }
+    * section.skills{
+        clip-path: polygon(0 0, 100% 0, 100% 80%,100% 90%, 0 100%);
+
+    }
+
+    
+}
+
+
+
